@@ -1,2 +1,2 @@
 ### MyVimConfig
-This repository is stored my vim configration file.
+This repository stored my vim configration.
