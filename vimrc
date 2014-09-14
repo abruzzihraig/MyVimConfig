@@ -4,11 +4,11 @@ Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-sensible'
-Plug 'git@github.com:bling/vim-airline'
-Plug 'git@github.com:kien/ctrlp.vim.git'
+Plug 'https://github.com/bling/vim-airline'
+Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'git@github.com:editorconfig/editorconfig-vim.git'
 Plug 'git@github.com:mattn/emmet-vim.git'
-Plug 'git@github.com:digitaltoad/vim-jade.git'
+Plug 'git://github.com/digitaltoad/vim-jade.git'
 Plug 'git@github.com:wavded/vim-stylus.git'
 Plug 'git@github.com:ervandew/supertab.git'
 Plug 'git@github.com:mhinz/vim-startify.git'
@@ -18,14 +18,13 @@ Plug 'git@github.com:Lokaltog/vim-easymotion.git'
 Plug 'git@github.com:tpope/vim-eunuch.git'
 Plug 'git@github.com:Shougo/vimproc.vim.git'
 Plug 'git@github.com:Shougo/vimshell.vim.git'
-Plug 'git@github.com:glts/vim-cottidie.git'
-Plug 'git@github.com:tpope/vim-surround.git'
 Plug 'git@github.com:skammer/vim-css-color.git'
+Plug 'git@github.com:suan/vim-instant-markdown.git'
+Plug 'git@github.com:groenewege/vim-less.git'
 call plug#end()
 
 syntax enable
 filetype indent plugin on
-set clipboard=unnamed
 set smartindent
 set cindent
 set ruler
@@ -37,12 +36,19 @@ set matchtime=1
 set showmatch
 set tabstop=4
 set shiftwidth=4
-"set t_Co=256
-set rtp+=/usr/local/Cellar/fzf/0.8.5
-set cmdheight=2
-set guifont=Sauce\ Code\ Powerline\ ExtraLight\ 28
 
-let g:airline_powerline_fonts=1
+set incsearch " increase search
+set autoindent
+set cindent
+set smartindent
+set clipboard=unnamed
+set noimdisable
+autocmd! InsertLeave * set imdisable|set iminsert=0
+autocmd! InsertEnter * set noimdisable|set iminsert=0
+
+set t_Co=256
+set rtp+=/usr/local/Cellar/fzf/0.8.3
+
 """""" easy motion config """"""
 " Gif config
 map  / <Plug>(easymotion-sn)
@@ -76,8 +82,6 @@ let g:startify_custom_header = [
                 \'',
                 \'',
                 \ ]
-
-autocmd VimEnter * nested CottidieTip
 
 " let g:user_emmet_expandabbr_key = '<Tab>'
 " tabstop, shiftwidth, softtabstop
