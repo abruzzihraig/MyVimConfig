@@ -31,8 +31,9 @@ Plug 'git@github.com:kchmck/vim-coffee-script.git'
 Plug 'git@github.com:Raimondi/delimitMate.git'
 Plug 'git@github.com:ntpeters/vim-better-whitespace.git'
 Plug 'git@github.com:tpope/vim-fugitive.git'
-Plug 'git@github.com:mxw/vim-jsx.git'
 Plug 'git@github.com:tpope/vim-repeat.git'
+Plug 'git@github.com:scrooloose/syntastic.git'
+Plug 'git@github.com:mxw/vim-jsx.git'
 call plug#end()
 
 syntax enable
