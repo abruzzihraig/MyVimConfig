@@ -2,8 +2,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-sensible'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'git@github.com:bling/vim-airline'
 Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'git@github.com:editorconfig/editorconfig-vim.git'
@@ -20,7 +20,19 @@ Plug 'git@github.com:Shougo/vimproc.vim.git'
 Plug 'git@github.com:Shougo/vimshell.vim.git'
 Plug 'git@github.com:glts/vim-cottidie.git'
 Plug 'git@github.com:tpope/vim-surround.git'
-Plug 'git@github.com:skammer/vim-css-color.git'
+Plug 'git@github.com:suan/vim-instant-markdown.git'
+Plug 'git@github.com:vimwiki/vimwiki.git'
+Plug 'git@github.com:groenewege/vim-less.git'
+Plug 'git@github.com:ervandew/screen.git'
+Plug 'git@github.com:esneider/YUNOcommit.vim.git'
+Plug 'git@github.com:othree/html5.vim.git'
+Plug 'git@github.com:rking/ag.vim.git'
+Plug 'git@github.com:kchmck/vim-coffee-script.git'
+Plug 'git@github.com:Raimondi/delimitMate.git'
+Plug 'git@github.com:ntpeters/vim-better-whitespace.git'
+Plug 'git@github.com:tpope/vim-fugitive.git'
+Plug 'git@github.com:mxw/vim-jsx.git'
+Plug 'git@github.com:tpope/vim-repeat.git'
 call plug#end()
 
 syntax enable
@@ -40,7 +52,7 @@ set shiftwidth=4
 "set t_Co=256
 set rtp+=/usr/local/Cellar/fzf/0.8.5
 set cmdheight=2
-set guifont=Sauce\ Code\ Powerline\ ExtraLight\ 28
+set guifont=Sauce\ Code\ Powerline\ ExtraLight:h28
 
 let g:airline_powerline_fonts=1
 """""" easy motion config """"""
